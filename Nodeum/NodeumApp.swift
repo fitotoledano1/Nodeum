@@ -11,7 +11,7 @@ import SwiftUI
 struct NodeumApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NodeumHomeView()
         }
     }
 }
