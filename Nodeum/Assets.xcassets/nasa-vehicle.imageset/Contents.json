@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "nasa-cIX5TlQ_FgM-unsplash.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "nasa-vehicle.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },

@@ -7,8 +7,21 @@
 
 import Foundation
 
+struct Category: Identifiable {
+    var id = UUID()
+    let title: String
+    let items: [NodeumItem]
+}
+
+struct NMItem: Identifiable {
+    var id = UUID()
+    let title: String
+    let shortDescription: String
+}
+
 struct NodeumItem: Identifiable {
     var id = UUID()
     let title: String
     let shortDescription: String
+    let backgroundImage: String
 }

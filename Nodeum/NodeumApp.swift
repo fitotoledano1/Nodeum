@@ -11,7 +11,17 @@ import SwiftUI
 struct NodeumApp: App {
     var body: some Scene {
         WindowGroup {
-            NodeumHomeView()
+            Home()
+//            TabView {
+//                Home()
+//                    .tabItem {
+//                        Label("Home", systemImage: "house.fill")
+//                    }
+//                NodeumUseCasesView()
+//                    .tabItem {
+//                        Label("Use Cases", systemImage: "printer.fill")
+//                    }
+//            }
         }
     }
 }
