@@ -10,7 +10,8 @@ import SwiftUI
 struct Home: View {
     
     private let categories = [
-        NodeumData.useCaseCategory
+        NodeumData.useCaseCategory,
+        NodeumData.benefitsCategory
     ]
     
     var body: some View {

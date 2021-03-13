@@ -22,11 +22,10 @@ struct CategoryRow: View {
                     ForEach(category.items) { item in
                         MainCard(item: item)
                     }
-                    .frame(height: 200, alignment: .topLeading)
+                    .frame(height: 180, alignment: .topLeading)
                 }
             }
             .padding(.horizontal, 20)
-            Spacer()
         }
     }
 }
