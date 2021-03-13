@@ -9,7 +9,9 @@ import SwiftUI
 
 struct Home: View {
     
-    private let categories = [NodeumData.useCaseCategory]
+    private let categories = [
+        NodeumData.useCaseCategory
+    ]
     
     var body: some View {
         NavigationView {

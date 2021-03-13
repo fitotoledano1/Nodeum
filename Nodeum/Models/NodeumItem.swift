@@ -13,12 +13,6 @@ struct Category: Identifiable {
     let items: [NodeumItem]
 }
 
-struct NMItem: Identifiable {
-    var id = UUID()
-    let title: String
-    let shortDescription: String
-}
-
 struct NodeumItem: Identifiable {
     var id = UUID()
     let title: String

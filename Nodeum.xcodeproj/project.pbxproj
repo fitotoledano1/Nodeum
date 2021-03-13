@@ -9,13 +9,10 @@
 /* Begin PBXBuildFile section */
 		B01644AB25FCEED700C13FE5 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01644AA25FCEED700C13FE5 /* Home.swift */; };
 		B01644AF25FCEF8200C13FE5 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01644AE25FCEF8200C13FE5 /* CategoryRow.swift */; };
-		B06CC2DE25F16EE0006EED3E /* NodeumItemCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06CC2DD25F16EE0006EED3E /* NodeumItemCard.swift */; };
 		B08956B725FD315C00ECC476 /* MainCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08956B625FD315C00ECC476 /* MainCard.swift */; };
 		B08F159325D62C3D002F04EA /* NodeumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F159225D62C3D002F04EA /* NodeumApp.swift */; };
-		B08F159525D62C3D002F04EA /* NodeumUseCasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F159425D62C3D002F04EA /* NodeumUseCasesView.swift */; };
 		B08F159725D62C3E002F04EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08F159625D62C3E002F04EA /* Assets.xcassets */; };
 		B08F159A25D62C3E002F04EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08F159925D62C3E002F04EA /* Preview Assets.xcassets */; };
-		B0A6C7CD25FC19A200E8DE3B /* NodeumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A6C7CC25FC19A200E8DE3B /* NodeumDetailView.swift */; };
 		B0FFA05925F16DAD0079C4D1 /* NodeumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FFA05825F16DAD0079C4D1 /* NodeumData.swift */; };
 		B0FFA05D25F16DC90079C4D1 /* NodeumItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FFA05C25F16DC90079C4D1 /* NodeumItem.swift */; };
 /* End PBXBuildFile section */
@@ -23,15 +20,12 @@
 /* Begin PBXFileReference section */
 		B01644AA25FCEED700C13FE5 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		B01644AE25FCEF8200C13FE5 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
-		B06CC2DD25F16EE0006EED3E /* NodeumItemCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeumItemCard.swift; sourceTree = "<group>"; };
 		B08956B625FD315C00ECC476 /* MainCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCard.swift; sourceTree = "<group>"; };
 		B08F158F25D62C3D002F04EA /* Nodeum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nodeum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B08F159225D62C3D002F04EA /* NodeumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeumApp.swift; sourceTree = "<group>"; };
-		B08F159425D62C3D002F04EA /* NodeumUseCasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeumUseCasesView.swift; sourceTree = "<group>"; };
 		B08F159625D62C3E002F04EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B08F159925D62C3E002F04EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B08F159B25D62C3E002F04EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0A6C7CC25FC19A200E8DE3B /* NodeumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeumDetailView.swift; sourceTree = "<group>"; };
 		B0FFA05825F16DAD0079C4D1 /* NodeumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeumData.swift; sourceTree = "<group>"; };
 		B0FFA05C25F16DC90079C4D1 /* NodeumItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeumItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,21 +51,10 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		B023ECC325FCE97B00B1F834 /* Use Cases */ = {
-			isa = PBXGroup;
-			children = (
-				B08F159425D62C3D002F04EA /* NodeumUseCasesView.swift */,
-				B06CC2DD25F16EE0006EED3E /* NodeumItemCard.swift */,
-				B0A6C7CC25FC19A200E8DE3B /* NodeumDetailView.swift */,
-			);
-			path = "Use Cases";
-			sourceTree = "<group>";
-		};
 		B06CC2E025F16EE3006EED3E /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				B01644A725FCEA9F00C13FE5 /* Home */,
-				B023ECC325FCE97B00B1F834 /* Use Cases */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,15 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B08F159525D62C3D002F04EA /* NodeumUseCasesView.swift in Sources */,
 				B0FFA05925F16DAD0079C4D1 /* NodeumData.swift in Sources */,
 				B01644AF25FCEF8200C13FE5 /* CategoryRow.swift in Sources */,
 				B01644AB25FCEED700C13FE5 /* Home.swift in Sources */,
 				B08F159325D62C3D002F04EA /* NodeumApp.swift in Sources */,
 				B0FFA05D25F16DC90079C4D1 /* NodeumItem.swift in Sources */,
-				B06CC2DE25F16EE0006EED3E /* NodeumItemCard.swift in Sources */,
 				B08956B725FD315C00ECC476 /* MainCard.swift in Sources */,
-				B0A6C7CD25FC19A200E8DE3B /* NodeumDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
