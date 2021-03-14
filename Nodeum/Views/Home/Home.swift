@@ -57,9 +57,7 @@ struct Home: View {
                     }
                 }
                 .navigationTitle("Nodeum")
-            }.sheet(isPresented: $isPresented, onDismiss: {
-                isPresented = false
-            }) {
+            }.sheet(isPresented: $isPresented) {
                 Customers()
             }
         }
