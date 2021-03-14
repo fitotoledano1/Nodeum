@@ -10,17 +10,18 @@ import SwiftUI
 struct Home: View {
     
     private let categories = [
-        NodeumData.useCaseCategory,
-        NodeumData.benefitsCategory
+        NodeumData.benefitsCategory,
+        NodeumData.useCaseCategory
     ]
+    
+    @State private var isPresented: Bool = false
     
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
-                
+
                 // Main Card
                 ZStack {
-                    
                     Image("trees")
                         .resizable()
                         .scaledToFill()
@@ -44,6 +45,10 @@ struct Home: View {
                             .padding(.bottom, 40)
                     }
                 }
+                .shadow(radius: 8)
+                .onTapGesture {
+                    isPresented = true
+                }
                 
                 // Categories Vertical Stack
                 VStack {
@@ -52,6 +57,10 @@ struct Home: View {
                     }
                 }
                 .navigationTitle("Nodeum")
+            }.sheet(isPresented: $isPresented, onDismiss: {
+                isPresented = false
+            }) {
+                Customers()
             }
         }
     }

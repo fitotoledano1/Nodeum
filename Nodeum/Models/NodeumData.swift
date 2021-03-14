@@ -12,9 +12,17 @@ struct NodeumData {
     // MARK: - Goal
     static let companyObjective = "Data Management Software for Hybrid Storage at Petabyte Scale"
     
+    // MARK: - Customers
+    static let oncoDNA = Customer(name: "OncoDNA", logo: "logo-oncodna")
+    static let mikros = Customer(name: "MIKROS", logo: "logo-mikros")
+    static let synLab = Customer(name: "SYNLAB", logo: "logo-synlab")
+    static let iteos = Customer(name: "iTeos", logo: "logo-iteos")
+    static let ipg = Customer(name: "IPG Genetics", logo: "logo-ipg")
+    
+    static let customers: [Customer] = [oncoDNA, mikros, synLab, iteos, ipg]
     
     // MARK: - Use Cases
-    static let useCaseCategory = Category(title: "Use Cases", items: useCases)
+    static let useCaseCategory = Category(title: "What Nodeum does", items: useCases)
     
     // Use Cases for Nodeum
     static let nasArchive = NodeumItem(title: "Archive",
@@ -34,7 +42,7 @@ struct NodeumData {
     
     
     // MARK: - Benefits
-    static let benefitsCategory = Category(title: "Benefits", items: benefits)
+    static let benefitsCategory = Category(title: "Why use Nodeum", items: benefits)
     
     // Use Cases for Nodeum
     static let catalogAndSearch = NodeumItem(title: "Catalog and Search",
@@ -43,7 +51,7 @@ struct NodeumData {
     static let workflowOrchestrator = NodeumItem(title: "Workflow Orchestrator",
                                        shortDescription: "Increase productivity and gain control over files and system data with file-based, automated data workflows.",
                                        backgroundImage: "nasa-vehicle")
-    static let metadataDriven = NodeumItem(title: "Catalog and Search",
+    static let metadataDriven = NodeumItem(title: "Metadata Driven",
                                        shortDescription: "Policies based on access date, creation date, file name…",
                                        backgroundImage: "nasa-vehicle")
     static let analysisReporting = NodeumItem(title: "Analysis and Reporting",

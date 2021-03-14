@@ -7,6 +7,12 @@
 
 import Foundation
 
+struct Customer: Identifiable {
+    var id = UUID()
+    let name: String
+    let logo: String
+}
+
 struct Category: Identifiable {
     var id = UUID()
     let title: String
