@@ -9,6 +9,9 @@ import Foundation
 
 struct NodeumData {
     
+    // MARK: - Goal
+    static let companyObjective = "Data Management Software for Hybrid Storage at Petabyte Scale"
+    
     
     // MARK: - Use Cases
     static let useCaseCategory = Category(title: "Use Cases", items: useCases)

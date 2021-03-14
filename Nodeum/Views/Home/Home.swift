@@ -17,6 +17,35 @@ struct Home: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
+                
+                // Main Card
+                ZStack {
+                    
+                    Image("trees")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(height: 400)
+                        .cornerRadius(10)
+                        .padding()
+                        .padding(.horizontal, 20)
+                    RoundedRectangle(cornerRadius: 10)
+                        .foregroundColor(Color.secondary.opacity(0.67))
+                        .frame(height: 400)
+                        .padding()
+                        .padding(.horizontal, 20)
+                        
+                    VStack() {
+                        Spacer()
+                        Text(NodeumData.companyObjective)
+                            .font(.largeTitle)
+                            .bold()
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 56)
+                            .padding(.bottom, 40)
+                    }
+                }
+                
+                // Categories Vertical Stack
                 VStack {
                     ForEach(categories) { category in
                         CategoryRow(category: category)

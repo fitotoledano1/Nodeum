@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainCard: View {
+struct CategoryItem: View {
     
     var item: NodeumItem
     
@@ -26,6 +26,6 @@ struct MainCard: View {
 
 struct MainCard_Previews: PreviewProvider {
     static var previews: some View {
-        MainCard(item: NodeumData.nasArchive)
+        CategoryItem(item: NodeumData.nasArchive)
     }
 }

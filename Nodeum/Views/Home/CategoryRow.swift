@@ -20,7 +20,7 @@ struct CategoryRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {
                     ForEach(category.items) { item in
-                        MainCard(item: item)
+                        CategoryItem(item: item)
                     }
                     .frame(height: 180, alignment: .topLeading)
                 }
