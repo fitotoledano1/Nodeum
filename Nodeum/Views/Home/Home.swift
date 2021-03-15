@@ -60,7 +60,6 @@ struct Home: View {
             }.sheet(isPresented: $isPresented) {
                 Customers()
             }
-            .padding()
         }
     }
 }
