@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B01644AB25FCEED700C13FE5 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01644AA25FCEED700C13FE5 /* Home.swift */; };
 		B01644AF25FCEF8200C13FE5 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01644AE25FCEF8200C13FE5 /* CategoryRow.swift */; };
+		B068BA482600079300DB2C2B /* MainCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068BA472600079300DB2C2B /* MainCard.swift */; };
 		B0891EAF25FDEBC7006BDF1F /* Customers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0891EAE25FDEBC7006BDF1F /* Customers.swift */; };
 		B08956B725FD315C00ECC476 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08956B625FD315C00ECC476 /* CategoryItem.swift */; };
 		B08F159325D62C3D002F04EA /* NodeumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F159225D62C3D002F04EA /* NodeumApp.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		B01644AA25FCEED700C13FE5 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		B01644AE25FCEF8200C13FE5 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		B068BA472600079300DB2C2B /* MainCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCard.swift; sourceTree = "<group>"; };
 		B0891EAE25FDEBC7006BDF1F /* Customers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customers.swift; sourceTree = "<group>"; };
 		B08956B625FD315C00ECC476 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		B08F158F25D62C3D002F04EA /* Nodeum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nodeum.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				B01644AA25FCEED700C13FE5 /* Home.swift */,
+				B068BA472600079300DB2C2B /* MainCard.swift */,
 				B01644AE25FCEF8200C13FE5 /* CategoryRow.swift */,
 				B08956B625FD315C00ECC476 /* CategoryItem.swift */,
 			);
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B068BA482600079300DB2C2B /* MainCard.swift in Sources */,
 				B0FFA05925F16DAD0079C4D1 /* NodeumData.swift in Sources */,
 				B0891EAF25FDEBC7006BDF1F /* Customers.swift in Sources */,
 				B01644AF25FCEF8200C13FE5 /* CategoryRow.swift in Sources */,

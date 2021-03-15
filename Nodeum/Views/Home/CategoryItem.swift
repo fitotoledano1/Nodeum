@@ -24,7 +24,7 @@ struct CategoryItem: View {
     }
 }
 
-struct MainCard_Previews: PreviewProvider {
+struct CategoryItem_Previews: PreviewProvider {
     static var previews: some View {
         CategoryItem(item: NodeumData.nasArchive)
     }

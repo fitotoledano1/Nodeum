@@ -19,35 +19,8 @@ struct Home: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
-                // Main Card
-                ZStack {
-                    Image("trees")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(height: 400)
-                        .cornerRadius(10)
-                        .padding()
-                        .padding(.horizontal, 20)
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(Color.black.opacity(0.33))
-                        .frame(height: 400)
-                        .padding()
-                        .padding(.horizontal, 20)
-                        
-                    VStack() {
-                        Spacer()
-                        Text(NodeumData.companyObjective)
-                            .font(.largeTitle)
-                            .bold()
-                            .foregroundColor(.white)
-                            .padding(.horizontal, 56)
-                            .padding(.bottom, 40)
-                    }
-                }
-                .shadow(radius: 8)
-                .onTapGesture {
-                    isPresented = true
-                }
+                
+                MainCard(isPresented: $isPresented)
                 
                 // Categories Vertical Stack
                 VStack {
