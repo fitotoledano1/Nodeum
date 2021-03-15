@@ -22,13 +22,11 @@ struct Home: View {
                 
                 MainCard(isPresented: $isPresented)
                 
-                // Categories Vertical Stack
                 VStack {
                     ForEach(categories) { category in
                         CategoryRow(category: category)
                     }
                 }
-                
                 .navigationTitle("Nodeum")
             }.sheet(isPresented: $isPresented) {
                 Customers()

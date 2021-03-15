@@ -12,7 +12,6 @@ struct MainCard: View {
     @Binding var isPresented: Bool
     
     var body: some View {
-        // Main Card
         ZStack(alignment: .bottomLeading) {
             Image("trees")
                 .resizable()
