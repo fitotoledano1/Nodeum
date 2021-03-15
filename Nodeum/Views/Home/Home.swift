@@ -19,7 +19,6 @@ struct Home: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
-
                 // Main Card
                 ZStack {
                     Image("trees")
@@ -30,7 +29,7 @@ struct Home: View {
                         .padding()
                         .padding(.horizontal, 20)
                     RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(Color.secondary.opacity(0.67))
+                        .foregroundColor(Color.black.opacity(0.33))
                         .frame(height: 400)
                         .padding()
                         .padding(.horizontal, 20)
@@ -56,10 +55,12 @@ struct Home: View {
                         CategoryRow(category: category)
                     }
                 }
+                
                 .navigationTitle("Nodeum")
             }.sheet(isPresented: $isPresented) {
                 Customers()
             }
+            .padding()
         }
     }
 }
