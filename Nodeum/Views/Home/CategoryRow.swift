@@ -13,10 +13,12 @@ struct CategoryRow: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
+            
             Text(category.title)
                 .font(.system(size: 22, weight: .bold))
                 .padding(.top, 20)
                 .padding(.horizontal, 20)
+            
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {
                     ForEach(category.items) { item in
